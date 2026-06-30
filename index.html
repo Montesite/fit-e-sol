@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit&amp;Sol – Roupas de academia e moda praia</title>
+  <meta name="description" content="Fit&amp;Sol: moda fitness e praia feminina que une estilo, conforto e autoestima. Biquínis, maiôs, conjuntos de academia e muito mais para a mulher dinâmica. Belém–PA.">
+  <meta property="og:title" content="Fit&amp;Sol – Roupas de academia e moda praia">
+  <meta property="og:description" content="Fit&amp;Sol: moda fitness e praia feminina que une estilo, conforto e autoestima. Do treino à praia, peças que inspiram seu ritmo.">
+  <meta property="og:image" content="https://www.fitesol.com.br/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fitesol.com.br">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="canonical" href="https://www.fitesol.com.br">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --terracota:       #E87344;
+      --terracota-dark:  #CC5A2E;
+      --terracota-light: #F0926A;
+      --caramelo:        #D4A24B;
+      --areia:           #EDF8FB;
+      --off-white:       #F4FBFD;
+      --dourado:         #D4A24B;
+      --verde-praia:     #2D93AC;
+      --verde-oliva:     #1F7289;
+      --preto:           #0F2733;
+      --texto:           #1A3A47;
+      --cinza:           #4A7A8A;
+      --cinza-claro:     #B8DDE8;
+      --branco:          #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--texto);
+      background-color: var(--off-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Buttons ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--terracota);
+      color: var(--branco);
+      border-color: var(--terracota);
+    }
+    .btn-primary:hover { background-color: var(--terracota-dark); border-color: var(--terracota-dark); }
+
+    .btn-outline-white {
+      background-color: rgba(255,255,255,0.12);
+      color: var(--branco);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn-outline-white:hover {
+      background-color: rgba(255,255,255,0.22);
+      border-color: var(--branco);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--terracota);
+      border-color: var(--terracota);
+    }
+    .btn-outline:hover { background-color: var(--terracota); color: var(--branco); }
+
+    /* ─── Sections ─── */
+    .section { padding: 88px 0; }
+    .section-alt { background-color: var(--areia); }
+    .section-dark { background-color: var(--preto); }
+
+    /* ─── Backgrounds de seção ─── */
+    #valores {
+      position: relative;
+      background-color: transparent;
+      background-image: url('https://images.unsplash.com/photo-xXCsqOYaGsA?w=1920&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      background-attachment: fixed;
+    }
+    #valores::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(237, 248, 251, 0.93);
+      z-index: 0;
+    }
+    #valores > .container { position: relative; z-index: 1; }
+
+    #contato {
+      position: relative;
+      background-color: transparent;
+      background-image: url('https://images.unsplash.com/photo-j0ijPFQQOBQ?w=1920&q=80');
+      background-size: cover;
+      background-position: center top;
+    }
+    #contato::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(237, 248, 251, 0.91);
+      z-index: 0;
+    }
+    #contato > .container { position: relative; z-index: 1; }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(232, 115, 68, 0.11);
+      color: var(--terracota);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-badge-dark {
+      background-color: rgba(201,164,69,0.18);
+      color: var(--dourado);
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 2.9rem);
+      color: var(--preto);
+      margin-bottom: 16px;
+    }
+    .section-title span { color: var(--terracota); }
+    .section-title-white { color: var(--branco); }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--cinza);
+      max-width: 580px;
+      line-height: 1.75;
+    }
+
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-header .section-subtitle { margin: 0 auto; }
+
+    /* ─── Header ─── */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all 0.4s ease;
+    }
+
+    #header.scrolled {
+      background-color: rgba(253, 250, 245, 0.96);
+      backdrop-filter: blur(14px);
+      padding: 12px 0;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-img { height: 54px; width: auto; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.9);
+      transition: color 0.3s;
+      letter-spacing: 0.02em;
+    }
+
+    #header.scrolled .nav-links a { color: var(--texto); }
+    .nav-links a:hover { color: var(--terracota) !important; }
+
+    .nav-cta {
+      background-color: var(--terracota) !important;
+      color: var(--branco) !important;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600 !important;
+      border: 2px solid var(--terracota);
+    }
+    .nav-cta:hover { background-color: var(--terracota-dark) !important; border-color: var(--terracota-dark) !important; color: var(--branco) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: rgba(255,255,255,0.9);
+      transition: all 0.3s;
+      display: block;
+    }
+    #header.scrolled .hamburger span { background-color: var(--preto); }
+
+    /* ─── Mobile Nav ─── */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: var(--off-white);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+    }
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--texto);
+      transition: color 0.3s;
+    }
+    .mobile-nav a:hover { color: var(--terracota); }
+
+    .mobile-close {
+      position: absolute;
+      top: 24px; right: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--texto);
+      display: flex;
+    }
+
+    /* ─── Hero ─── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-image: url('https://images.unsplash.com/photo-1593836788196-9fd68e904906?w=1920&q=80');
+      background-size: cover;
+      background-position: 42% center;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        130deg,
+        rgba(26, 24, 21, 0.82) 0%,
+        rgba(232, 115, 68, 0.42) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: var(--branco);
+      max-width: 680px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      backdrop-filter: blur(8px);
+      color: var(--branco);
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(3.2rem, 9vw, 6rem);
+      font-weight: 700;
+      color: var(--branco);
+      line-height: 1.0;
+      margin-bottom: 8px;
+    }
+
+    .hero-content h1 .amp { color: var(--dourado); }
+
+    .hero-content h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 540px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ─── Stats Bar ─── */
+    #stats {
+      position: relative;
+      padding: 32px 0;
+      background-image: url('https://images.unsplash.com/photo-a6FHROHuQ9o?w=1920&q=80');
+      background-size: cover;
+      background-position: center 40%;
+    }
+    #stats::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(232, 115, 68, 0.86);
+      z-index: 0;
+    }
+    #stats .container { position: relative; z-index: 1; }
+
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--branco);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.82);
+      margin-top: 4px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ─── About ─── */
+    #sobre .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .about-image-wrap {
+      position: relative;
+    }
+
+    .about-image-wrap img {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      border-radius: 20px;
+      object-position: center top;
+    }
+
+    .about-float-badge {
+      position: absolute;
+      bottom: -24px;
+      right: -24px;
+      width: 118px;
+      height: 118px;
+      background: linear-gradient(135deg, var(--terracota), var(--caramelo));
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 14px;
+      box-shadow: 0 8px 32px rgba(232,115,68,0.35);
+    }
+
+    .about-float-badge strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--branco);
+      line-height: 1;
+    }
+
+    .about-float-badge span {
+      font-size: 0.62rem;
+      color: rgba(255,255,255,0.88);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .about-text .section-title { margin-bottom: 20px; }
+
+    .about-text p {
+      color: var(--cinza);
+      line-height: 1.85;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .about-text .highlight-quote {
+      background-color: var(--areia);
+      border-left: 3px solid var(--terracota);
+      padding: 18px 22px;
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+      color: var(--texto);
+      font-size: 0.97rem;
+      line-height: 1.7;
+      margin: 24px 0;
+    }
+
+    /* ─── Historia accordion ─── */
+    .historia-trigger {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .historia-trigger-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .historia-trigger-row .section-title {
+      margin-bottom: 0;
+    }
+
+    .historia-chevron {
+      flex-shrink: 0;
+      color: var(--terracota);
+      transition: transform 0.38s ease;
+    }
+
+    .historia-trigger[aria-expanded="true"] .historia-chevron {
+      transform: rotate(180deg);
+    }
+
+    .historia-body {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.48s ease, opacity 0.38s ease;
+    }
+
+    .historia-body.open {
+      max-height: 700px;
+      opacity: 1;
+    }
+
+    /* ─── Values ─── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .value-card {
+      background-color: var(--branco);
+      border-radius: 18px;
+      padding: 32px 22px;
+      text-align: center;
+      border: 1px solid var(--cinza-claro);
+      transition: all 0.35s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.09);
+      border-color: var(--terracota);
+    }
+
+    .value-icon {
+      width: 56px;
+      height: 56px;
+      background-color: rgba(232,115,68,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .value-icon svg { width: 26px; height: 26px; stroke: var(--terracota); }
+
+    .value-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--preto);
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      font-size: 0.82rem;
+      color: var(--cinza);
+      line-height: 1.65;
+    }
+
+    /* ─── Products ─── */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      background: var(--branco);
+      border: 1px solid var(--cinza-claro);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 16px 48px rgba(15,39,51,0.13);
+      transform: translateY(-5px);
+    }
+
+    .product-thumb {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+      background: var(--areia);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+
+    .product-card:hover .product-thumb img { transform: scale(1.06); }
+
+
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 0.63rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--verde-praia);
+      color: var(--branco);
+      padding: 4px 11px;
+      border-radius: 50px;
+    }
+
+    .product-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .product-body h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--texto);
+    }
+
+    .product-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background-color: var(--terracota);
+      color: var(--branco);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 0.25s;
+    }
+
+    .product-cta-btn:hover { background-color: var(--terracota-dark); }
+
+    /* ─── Mission / Vision ─── */
+    #missao {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-LyORqx-3O-c?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    #missao::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(26,24,21,0.91) 0%, rgba(42,28,15,0.87) 100%);
+      z-index: 0;
+    }
+    #missao > .container { position: relative; z-index: 1; }
+
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .mvv-card {
+      padding: 52px 44px;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .mvv-card:last-child { border-right: none; }
+
+    .mvv-icon {
+      width: 52px;
+      height: 52px;
+      background-color: rgba(201,164,69,0.18);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .mvv-icon svg { width: 26px; height: 26px; stroke: var(--dourado); }
+
+    .mvv-card h3 {
+      font-size: 1.25rem;
+      color: var(--dourado);
+      margin-bottom: 16px;
+    }
+
+    .mvv-card p {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+    }
+
+    /* ─── Contact ─── */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-cards { display: flex; flex-direction: column; gap: 18px; }
+
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background-color: var(--branco);
+      border-radius: 16px;
+      padding: 22px 24px;
+      border: 1px solid var(--cinza-claro);
+      transition: all 0.3s;
+    }
+    .contact-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); border-color: var(--terracota); }
+
+    .cc-icon {
+      width: 48px;
+      height: 48px;
+      background-color: rgba(232,115,68,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .cc-icon svg { width: 22px; height: 22px; stroke: var(--terracota); }
+
+    .contact-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--cinza);
+      margin-bottom: 4px;
+    }
+
+    .contact-card p, .contact-card a {
+      font-size: 0.95rem;
+      color: var(--texto);
+      font-weight: 500;
+      line-height: 1.55;
+    }
+    .contact-card a:hover { color: var(--terracota); }
+
+    .ig-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--branco);
+      border-radius: 16px;
+      padding: 22px 24px;
+      border: 1px solid var(--cinza-claro);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .ig-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); border-color: #C13584; }
+
+    .ig-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #E1306C, #C13584, #833AB4);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ig-icon svg { width: 24px; height: 24px; stroke: white; }
+
+    .ig-handle {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--texto);
+      display: block;
+    }
+    .ig-card:hover .ig-handle { color: #C13584; }
+    .ig-card .ig-info p { font-size: 0.8rem; color: var(--cinza); margin-top: 2px; }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--terracota), var(--caramelo));
+      border-radius: 22px;
+      padding: 44px;
+      color: var(--branco);
+      margin-bottom: 20px;
+    }
+
+    .cta-box h3 {
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+    }
+
+    .cta-box p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    .cta-box .btn-white {
+      background-color: var(--branco);
+      color: var(--terracota);
+      border-color: var(--branco);
+    }
+    .cta-box .btn-white:hover { background-color: var(--areia); }
+
+    .info-box {
+      background-color: var(--branco);
+      border-radius: 18px;
+      padding: 32px;
+      border: 1px solid var(--cinza-claro);
+    }
+
+    .info-box-item { margin-bottom: 20px; }
+    .info-box-item:last-child { margin-bottom: 0; }
+
+    .info-box-item h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--cinza);
+      margin-bottom: 6px;
+    }
+
+    .info-box-item p {
+      font-size: 0.93rem;
+      color: var(--texto);
+      line-height: 1.65;
+    }
+
+    /* ─── Footer ─── */
+    #footer {
+      background-color: var(--preto);
+      padding: 64px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 52px;
+      margin-bottom: 52px;
+    }
+
+    .footer-brand .logo-img {
+      height: 56px;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.75;
+      max-width: 280px;
+    }
+
+    .footer-brand .footer-cnpj {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.32);
+      margin-top: 16px;
+    }
+
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul li { margin-bottom: 12px; }
+
+    .footer-col ul li a {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      transition: color 0.3s;
+    }
+    .footer-col ul li a:hover { color: var(--terracota); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ─── WhatsApp Float ─── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 998;
+      width: 58px;
+      height: 58px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: background-color 0.3s;
+    }
+    .wa-float:hover { background-color: #1EBE57; }
+    .wa-float svg { width: 30px; height: 30px; fill: white; }
+
+    /* ─── Divider ─── */
+    .divider {
+      width: 48px;
+      height: 3px;
+      background-color: var(--terracota);
+      border-radius: 2px;
+      margin: 20px 0 28px;
+    }
+
+    /* ─── Fade In ─── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── Responsive ─── */
+    /* ── 1100px: tablet grande / desktop pequeno ── */
+    @media (max-width: 1100px) {
+      .values-grid { grid-template-columns: repeat(3, 1fr); }
+      .nav-links { gap: 22px; }
+      .nav-links a { font-size: 0.83rem; }
+    }
+
+    /* ── 900px: tablet ── */
+    @media (max-width: 900px) {
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .mvv-grid { grid-template-columns: 1fr; }
+      .mvv-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+      .mvv-card:last-child { border-bottom: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+      #sobre .grid-2 { gap: 48px; }
+      .about-image-wrap img { height: 480px; }
+      .section-header { margin-bottom: 48px; }
+    }
+
+    /* ── 768px: mobile landscape / tablet pequeno ── */
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      #header { padding: 14px 0; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .logo-img { height: 44px; }
+
+      #hero { min-height: 100svh; background-position: 30% 15%; }
+      .hero-content { max-width: 100%; padding-top: 60px; }
+
+      #sobre .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 52px;
+      }
+      .about-image-wrap img { height: 320px; object-position: top; }
+      .about-float-badge { right: 12px; bottom: -16px; width: 100px; height: 100px; }
+      .about-float-badge strong { font-size: 1.6rem; }
+
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .stats-grid { gap: 32px; }
+      .stat-number { font-size: 1.85rem; }
+
+      .contact-wrap { grid-template-columns: 1fr; gap: 40px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-brand { grid-column: auto; }
+      .footer-col { text-align: center; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+      .section-header { margin-bottom: 44px; }
+      .section-subtitle { font-size: 0.97rem; }
+      .highlight-quote { font-size: 0.95rem; }
+    }
+
+    /* ── 600px: phone grande ── */
+    @media (max-width: 600px) {
+      .container { padding: 0 18px; }
+      .section { padding: 52px 0; }
+      .section-header { margin-bottom: 36px; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .cta-box { padding: 32px 28px; }
+      .info-box { padding: 24px; }
+    }
+
+    /* ── 520px: phone médio ── */
+    @media (max-width: 520px) {
+      .section { padding: 44px 0; }
+      .container { padding: 0 16px; }
+
+      .hero-content h1 { font-size: clamp(2.6rem, 13vw, 3.4rem); }
+      .hero-content h2 { font-size: 0.97rem; }
+      .hero-buttons { flex-direction: column; width: 100%; }
+      .hero-buttons .btn { width: 100%; justify-content: center; }
+
+      .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .stat-item { padding: 14px 8px; }
+
+      .products-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+      .mvv-card { padding: 32px 24px; }
+
+      .cta-box { padding: 28px 20px; }
+      .cta-box h3 { font-size: 1.35rem; }
+      .info-box { padding: 20px; }
+      .info-box-item { padding-top: 16px !important; }
+
+      .contact-card { padding: 18px 16px; gap: 14px; }
+      .cc-icon { width: 42px; height: 42px; }
+
+      .section-subtitle { font-size: 0.93rem; }
+      .about-image-wrap img { height: 280px; }
+      .about-float-badge { right: 8px; bottom: -14px; width: 88px; height: 88px; }
+      .about-float-badge strong { font-size: 1.4rem; }
+    }
+
+    /* ── 400px: phone pequeno ── */
+    @media (max-width: 400px) {
+      .section { padding: 36px 0; }
+      .container { padding: 0 14px; }
+      .logo-img { height: 38px; }
+      .hero-content h1 { font-size: 2.4rem; }
+      .hero-badge { font-size: 0.68rem; padding: 5px 14px; }
+      .stat-number { font-size: 1.6rem; }
+      .mobile-nav a { font-size: 1.25rem; }
+      .mobile-nav { gap: 20px; }
+    }
+
+    /* ─── Seção Vitrine ─── */
+    #vitrine-promo {
+      background: linear-gradient(140deg, #0F2733 0%, #1A3A47 60%, #0F2733 100%);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #vitrine-promo::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,115,68,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .vitrine-promo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .vitrine-text p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.82;
+      margin-bottom: 16px;
+    }
+
+    .vitrine-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn-vitrine {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--terracota);
+      color: var(--branco);
+      padding: 15px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.97rem;
+      border: 2px solid var(--terracota);
+      transition: all 0.3s;
+    }
+    .btn-vitrine:hover { background-color: var(--terracota-dark); border-color: var(--terracota-dark); }
+    .btn-vitrine svg { width: 18px; height: 18px; }
+
+    .btn-vitrine-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: transparent;
+      color: rgba(255,255,255,0.75);
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 2px solid rgba(255,255,255,0.25);
+      transition: all 0.3s;
+    }
+    .btn-vitrine-ghost:hover {
+      border-color: rgba(255,255,255,0.6);
+      color: var(--branco);
+      background-color: rgba(255,255,255,0.07);
+    }
+    .btn-vitrine-ghost svg { width: 16px; height: 16px; }
+
+    /* Browser mockup */
+    .browser-wrap {
+      perspective: 1000px;
+    }
+
+    .browser-mockup {
+      background: var(--branco);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow:
+        0 48px 80px rgba(0,0,0,0.55),
+        0 0 0 1px rgba(255,255,255,0.06);
+      transform: perspective(900px) rotateY(-5deg) rotateX(2deg);
+      transition: transform 0.5s ease;
+    }
+    .browser-mockup:hover {
+      transform: perspective(900px) rotateY(-2deg) rotateX(1deg);
+    }
+
+    .browser-chrome {
+      background: #EDE7DF;
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid #DDD5C8;
+    }
+
+    .browser-dots { display: flex; gap: 6px; }
+    .browser-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+    }
+    .browser-dot:nth-child(1) { background: #FF5F57; }
+    .browser-dot:nth-child(2) { background: #FEBC2E; }
+    .browser-dot:nth-child(3) { background: #28C840; }
+
+    .browser-url-bar {
+      flex: 1;
+      background: var(--branco);
+      border: 1px solid #DDD5C8;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.7rem;
+      color: #888;
+      font-family: 'Inter', sans-serif;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .browser-body {
+      padding: 18px;
+      background: var(--areia);
+      min-height: 260px;
+    }
+
+    .mock-topbar {
+      background: var(--terracota);
+      border-radius: 8px;
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .mock-bar-logo { width: 72px; height: 9px; background: rgba(255,255,255,0.45); border-radius: 4px; }
+    .mock-bar-btn  { width: 52px; height: 20px; background: rgba(255,255,255,0.28); border-radius: 10px; }
+
+    .mock-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .mock-card {
+      background: var(--branco);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .mock-img {
+      height: 66px;
+    }
+
+    .mock-info { padding: 8px; }
+    .mock-name  { height: 7px; border-radius: 3px; margin-bottom: 6px; width: 75%; }
+    .mock-price { height: 7px; border-radius: 3px; width: 45%; background: rgba(232,115,68,0.3); }
+
+    @media (max-width: 900px) {
+      .vitrine-promo-grid { grid-template-columns: 1fr; gap: 44px; }
+      .browser-mockup { transform: none; }
+      .browser-mockup:hover { transform: none; }
+      #vitrine-promo { padding: 64px 0; }
+    }
+
+    @media (max-width: 600px) {
+      #vitrine-promo { padding: 48px 0; }
+      .vitrine-text p { font-size: 0.93rem; }
+    }
+
+    @media (max-width: 520px) {
+      .vitrine-cta-row { flex-direction: column; }
+      .btn-vitrine, .btn-vitrine-ghost { width: 100%; justify-content: center; }
+      .mock-grid { grid-template-columns: repeat(2, 1fr); }
+      .browser-wrap { animation: none; }
+    }
+
+    @media (max-width: 400px) {
+      .btn-vitrine { padding: 13px 24px; font-size: 0.9rem; }
+      .btn-vitrine-ghost { padding: 11px 20px; font-size: 0.85rem; }
+    }
+
+    /* ══════════ EFEITOS E ANIMAÇÕES ══════════ */
+
+    /* Barra de progresso de scroll */
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      z-index: 2000;
+      background: linear-gradient(90deg, var(--terracota), var(--dourado), var(--terracota-light));
+      width: 0%;
+      pointer-events: none;
+      transition: width 0.12s linear;
+    }
+
+    /* Variantes de entrada */
+    .slide-left {
+      opacity: 0;
+      transform: translateX(-52px);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94),
+                  transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .slide-right {
+      opacity: 0;
+      transform: translateX(52px);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94),
+                  transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .slide-left.visible,
+    .slide-right.visible {
+      opacity: 1;
+      transform: none;
+    }
+    /* Em mobile, troca slide lateral por fade simples para evitar overflow */
+    @media (max-width: 768px) {
+      .slide-left, .slide-right {
+        transform: translateY(24px);
+      }
+      /* Desativa fixed background em iOS/mobile (performance e glitch) */
+      #valores, #missao, #contato {
+        background-attachment: scroll;
+      }
+    }
+
+    /* Entrance da hero (stagger via JS) */
+    .hero-anim {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.85s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.85s cubic-bezier(0.22,1,0.36,1);
+    }
+    .hero-anim.in { opacity: 1; transform: none; }
+
+    /* Formas flutuantes na hero */
+    .hero-shape {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hs1 {
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(232,115,68,0.20) 0%, transparent 68%);
+      top: -100px; right: -140px;
+      animation: hsfloat 10s ease-in-out infinite;
+    }
+    .hs2 {
+      width: 260px; height: 260px;
+      background: radial-gradient(circle, rgba(201,164,69,0.16) 0%, transparent 68%);
+      bottom: 60px; right: 100px;
+      animation: hsfloat 7s ease-in-out infinite reverse;
+    }
+    .hs3 {
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(45,147,172,0.13) 0%, transparent 68%);
+      top: 38%; right: 28%;
+      animation: hsfloat 12s ease-in-out infinite 3s;
+    }
+    @keyframes hsfloat {
+      0%,100% { transform: translateY(0) scale(1); }
+      40%      { transform: translateY(-26px) scale(1.05); }
+      70%      { transform: translateY(12px) scale(0.97); }
+    }
+
+    /* Shimmer nos botões primários */
+    .btn-primary { position: relative; overflow: hidden; }
+    .btn-primary::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.28) 50%, transparent 70%);
+      transform: translateX(-120%);
+      transition: none;
+    }
+    .btn-primary:hover::after {
+      transform: translateX(120%);
+      transition: transform 0.55s ease;
+    }
+
+    /* Shimmer botão vitrine */
+    .btn-vitrine { position: relative; overflow: hidden; }
+    .btn-vitrine::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.22) 50%, transparent 70%);
+      transform: translateX(-120%);
+      transition: none;
+    }
+    .btn-vitrine:hover::after {
+      transform: translateX(120%);
+      transition: transform 0.55s ease;
+    }
+
+    /* Float no browser mockup */
+    .browser-wrap { animation: bwfloat 7s ease-in-out infinite; }
+    @keyframes bwfloat {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-12px); }
+    }
+
+    /* Stat items: entrada escalonada */
+    .stat-item {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .stat-item.vis { opacity: 1; transform: none; }
+
+    /* Value icon: hover suave */
+    .value-icon {
+      transition: background-color 0.35s ease, transform 0.35s ease;
+    }
+    .value-card:hover .value-icon {
+      background-color: rgba(232,115,68,0.2);
+      transform: scale(1.1) rotate(8deg);
+    }
+
+    /* Value card: transição completa para hover */
+    .value-card {
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, opacity 0.55s ease;
+    }
+
+    /* Product card: fade-in animation */
+    .product-card {
+      transition: box-shadow 0.3s ease, transform 0.3s ease, opacity 0.55s ease;
+    }
+
+    /* Contact card: icon animation */
+    .cc-icon {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .contact-card:hover .cc-icon {
+      background-color: rgba(232,115,68,0.2);
+      transform: scale(1.08);
+    }
+
+    /* Instagram card icon tilt */
+    .ig-icon { transition: transform 0.3s ease; }
+    .ig-card:hover .ig-icon { transform: scale(1.1) rotate(-5deg); }
+
+    /* MVV card hover */
+    .mvv-icon { transition: background-color 0.3s ease, transform 0.3s ease; }
+    .mvv-card { transition: background-color 0.3s ease; }
+    .mvv-card:hover { background-color: rgba(255,255,255,0.03); }
+    .mvv-card:hover .mvv-icon {
+      background-color: rgba(201,164,69,0.32);
+      transform: scale(1.1);
+    }
+
+    /* Divider: crescimento animado */
+    .divider-grow {
+      width: 0 !important;
+      transition: width 1s cubic-bezier(0.22,1,0.36,1) 0.3s !important;
+    }
+    .divider-grow.vis { width: 48px !important; }
+
+    /* Footer links: arrow hover */
+    .footer-col ul li a {
+      display: inline-flex;
+      align-items: center;
+    }
+    .footer-col ul li a::before {
+      content: '›';
+      font-size: 1.1em;
+      color: var(--terracota);
+      opacity: 0;
+      max-width: 0;
+      overflow: hidden;
+      transition: opacity 0.25s ease, max-width 0.25s ease, margin-right 0.25s ease;
+      margin-right: 0;
+    }
+    .footer-col ul li a:hover::before {
+      opacity: 1;
+      max-width: 14px;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#hero" aria-label="Ir para o início">
+          <img src="logo.png" alt="Fit&amp;Sol – Roupas de academia e moda praia" class="logo-img">
+        </a>
+
+        <nav aria-label="Menu principal">
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#missao">Nossa missão</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="vitrine.html">Vitrine</a></li>
+            <li>
+              <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="nav-cta">
+                Comprar agora
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+    <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+    <a href="#produtos" onclick="closeMobileNav()">Produtos</a>
+    <a href="#missao" onclick="closeMobileNav()">Nossa missão</a>
+    <a href="#contato" onclick="closeMobileNav()">Contato</a>
+    <a href="vitrine.html" onclick="closeMobileNav()">Vitrine online</a>
+    <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:8px;">
+      Comprar agora
+    </a>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-shape hs1"></div>
+    <div class="hero-shape hs2"></div>
+    <div class="hero-shape hs3"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge hero-anim">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          Moda fitness &amp; praia feminina
+        </div>
+
+        <h1 class="hero-anim">Fit<span class="amp">&amp;</span>Sol</h1>
+
+        <h2 class="hero-anim">Moda que inspira seu ritmo. Da academia à praia, peças que unem performance, estilo e autoestima para a mulher que não para.</h2>
+
+        <div class="hero-buttons hero-anim">
+          <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Pedir pelo WhatsApp
+          </a>
+          <a href="vitrine.html" class="btn btn-outline-white">Ver vitrine online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATS ═══════════ -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">+200</span>
+          <p class="stat-label">Modelos disponíveis</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">UV+</span>
+          <p class="stat-label">Proteção nos tecidos</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <p class="stat-label">Qualidade garantida</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Todo</span>
+          <p class="stat-label">Brasil com entrega</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PRODUTOS ═══════════ -->
+  <section id="produtos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          Nossa coleção
+        </div>
+        <h2 class="section-title">Peças para cada <span>momento seu</span></h2>
+        <p class="section-subtitle">Da academia à praia, temos a peça certa para você se sentir poderosa e confortável em qualquer situação.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1697739348487-75f668fdb6fb?w=600&q=80" alt="Biquínis – Fit&amp;Sol">
+            <span class="product-tag">Moda praia</span>
+          </div>
+          <div class="product-body">
+            <h3>Biquínis</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1611300287082-41650440e4a3?w=600&q=80" alt="Maiôs – Fit&amp;Sol">
+            <span class="product-tag">Moda praia</span>
+          </div>
+          <div class="product-body">
+            <h3>Maiôs</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1724432336328-9debd1351749?w=600&q=80" alt="Saída de praia – Fit&amp;Sol">
+            <span class="product-tag">Moda praia</span>
+          </div>
+          <div class="product-body">
+            <h3>Saída de praia</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1606902965551-dce093cda6e7?w=600&q=80" alt="Conjunto calça de academia – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Conjunto calça</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1731512589836-bd662292768a?w=600&q=80" alt="Conjunto short de academia – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Conjunto short</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1594915844371-2298bd354327?w=600&q=80" alt="Blusas dry fit – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Blusas dry fit</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1567013275689-c179a874478f?w=600&q=80" alt="Top de academia – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Tops de academia</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1691315909393-c5c91e22760f?w=600&q=80" alt="Short de academia – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Shorts de academia</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="vitrine.html" class="product-card fade-in">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1596641211273-938aeaf926a9?w=600&q=80" alt="Calça de academia – Fit&amp;Sol">
+            <span class="product-tag">Fitness</span>
+          </div>
+          <div class="product-body">
+            <h3>Calças de academia</h3>
+            <span class="product-cta-btn">Ver modelos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+      </div>
+
+      <div style="text-align:center; margin-top:52px;">
+        <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:16px 44px; font-size:1rem;">
+          Pedir catálogo completo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SOBRE ═══════════ -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="grid-2">
+
+        <div class="about-image-wrap slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80"
+            alt="Estilo de vida fitness e praia – Fit&amp;Sol"
+          >
+          <div class="about-float-badge">
+            <strong>100%</strong>
+            <span>Qualidade</span>
+          </div>
+        </div>
+
+        <div class="about-text slide-right">
+          <div class="historia-trigger" onclick="toggleHistoria(this)" aria-expanded="false">
+            <div class="section-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              Nossa história
+            </div>
+
+            <div class="historia-trigger-row">
+              <h2 class="section-title">Nascida do sonho de <span>duas irmãs</span></h2>
+              <svg class="historia-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="historia-body">
+            <p>A Fit&amp;Sol nasceu do sonho de duas irmãs que compartilhavam a mesma dificuldade: encontrar roupas modernas, confortáveis e de qualidade para treinar, ir à praia ou aproveitar os momentos de lazer, sem precisar gastar uma fortuna.</p>
+
+            <p>Apaixonadas por moda e pelo estilo de vida ativo, elas percebiam que muitas vezes era necessário escolher entre preço, qualidade ou design. Inconformadas com essa realidade, decidiram transformar essa necessidade em oportunidade.</p>
+
+            <blockquote class="highlight-quote">
+              "Mais do que uma marca, a Fit&amp;Sol representa a união de um sonho familiar e o compromisso de levar estilo e bem-estar para quem acredita que se sentir bem não precisa custar caro."
+            </blockquote>
+
+            <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Ver catálogo completo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ VALORES ═══════════ -->
+  <section id="valores" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          Nossos valores
+        </div>
+        <h2 class="section-title">O que nos <span>define</span></h2>
+        <p class="section-subtitle">Mais do que uma marca, somos um compromisso com o bem-estar e a autoestima da mulher brasileira.</p>
+      </div>
+
+      <div class="values-grid">
+
+        <div class="value-card fade-in">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3>Equilíbrio</h3>
+          <p>Harmonia entre saúde do corpo e o prazer do lazer — do treino à praia, em perfeita sintonia.</p>
+        </div>
+
+        <div class="value-card fade-in">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Qualidade técnica</h3>
+          <p>Tecidos com proteção UV, alta durabilidade e ajuste perfeito para cada tipo de corpo.</p>
+        </div>
+
+        <div class="value-card fade-in">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3>Praticidade</h3>
+          <p>Experiência de compra ágil, transparente e próxima — direto pelo WhatsApp, sem complicação.</p>
+        </div>
+
+        <div class="value-card fade-in">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3>Autoestima</h3>
+          <p>Criamos para que cada cliente sinta sua melhor versão — confiante em qualquer cenário.</p>
+        </div>
+
+        <div class="value-card fade-in">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M2.5 2v6h6M2.66 15.57a10 10 0 1 0 .57-8.38"></path>
+            </svg>
+          </div>
+          <h3>Consciência</h3>
+          <p>Ética produtiva e busca por processos que respeitem o meio ambiente e as pessoas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ VITRINE ONLINE ═══════════ -->
+  <section id="vitrine-promo">
+    <div class="container">
+      <div class="vitrine-promo-grid">
+
+        <!-- Texto -->
+        <div class="vitrine-text slide-left">
+          <div class="section-badge section-badge-dark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Loja online
+          </div>
+
+          <h2 class="section-title" style="color:var(--branco); margin-bottom:16px;">
+            Explore nossa <span>vitrine digital</span>
+          </h2>
+          <div class="divider" style="background:var(--dourado);"></div>
+
+          <p>Todos os nossos modelos reunidos em um só lugar. Navegue pela vitrine online e encontre a peça perfeita para o seu estilo de vida — da academia à praia, com muito conforto e tendência.</p>
+
+          <p>Visualize produtos, confira as opções disponíveis e faça seu pedido diretamente pelo WhatsApp com um toque. Prático, rápido e sem complicação.</p>
+
+          <div class="vitrine-cta-row">
+            <a href="vitrine.html" class="btn-vitrine">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              Acessar vitrine
+            </a>
+            <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn-vitrine-ghost">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Pedir pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Browser mockup -->
+        <div class="browser-wrap slide-right">
+          <div class="browser-mockup">
+            <div class="browser-chrome">
+              <div class="browser-dots">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <div class="browser-url-bar">fitesol.egestor.com.br/vitrine/</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-topbar">
+                <div class="mock-bar-logo"></div>
+                <div class="mock-bar-btn"></div>
+              </div>
+              <div class="mock-grid">
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(232,115,68,.22),rgba(212,162,75,.18));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(45,147,172,.2),rgba(90,107,56,.15));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(201,164,69,.2),rgba(212,162,75,.18));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(232,115,68,.15),rgba(45,147,172,.18));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(212,162,75,.22),rgba(232,115,68,.16));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-img" style="background:linear-gradient(135deg,rgba(90,107,56,.18),rgba(201,164,69,.2));"></div>
+                  <div class="mock-info"><div class="mock-name" style="background:#ddd;"></div><div class="mock-price"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MISSÃO / VISÃO ═══════════ -->
+  <section id="missao" class="section section-dark">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:52px;">
+        <div class="section-badge section-badge-dark">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          Propósito
+        </div>
+        <h2 class="section-title section-title-white">Missão, visão &amp; <span>diferenciais</span></h2>
+      </div>
+
+      <div class="mvv-grid">
+
+        <div class="mvv-card">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+              <path d="m9 12 2 2 4-4"></path>
+              <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path>
+            </svg>
+          </div>
+          <h3>Missão</h3>
+          <p>Proporcionar bem-estar e autoconfiança através de peças que unem performance e estilo. Acompanhar o ritmo de mulheres dinâmicas, oferecendo versatilidade da academia à praia com conforto, tecnologia e design contemporâneo.</p>
+        </div>
+
+        <div class="mvv-card">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Visão</h3>
+          <p>Ser a principal referência brasileira em moda de athleisure e beachwear online, reconhecida pela inovação constante e pela capacidade de conectar a energia do movimento à liberdade do verão, crescendo de forma sustentável.</p>
+        </div>
+
+        <div class="mvv-card">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3>Nossos diferenciais</h3>
+          <p>Marca 100% digital com curadoria cuidadosa de peças que equilibram preço, qualidade e design. Tecidos com proteção UV, alta durabilidade e atendimento próximo — estilo e bem-estar para quem não abre mão de se sentir bem.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTATO ═══════════ -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.08 6.08l1.06-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Fale com a gente
+        </div>
+        <h2 class="section-title">Entre em <span>contato</span></h2>
+        <p class="section-subtitle">Tire suas dúvidas, peça seu catálogo ou faça seu pedido. Atendimento rápido e próximo, direto pelo WhatsApp.</p>
+      </div>
+
+      <div class="contact-wrap">
+
+        <div class="contact-cards fade-in">
+
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.08 6.08l1.06-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>WhatsApp / Telefone</h4>
+              <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">(91) 99242-3020</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>E-mail</h4>
+              <a href="mailto:biarabelo_1@hotmail.com">biarabelo_1@hotmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua Domingos Marreiro, 973<br>Umarizal – Belém, PA</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Horário de atendimento</h4>
+              <p>Segunda a sábado<br>Das 08:00 às 18:00</p>
+            </div>
+          </div>
+
+          <div class="ig-card" onclick="window.open('https://www.instagram.com/fit_e_sol','_blank','noopener,noreferrer')" role="link" tabindex="0" aria-label="Seguir @fit_e_sol no Instagram">
+            <div class="ig-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="ig-info">
+              <span class="ig-handle">@fit_e_sol</span>
+              <p>Siga-nos no Instagram</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="fade-in">
+          <div class="cta-box">
+            <h3>Pronta para se sentir poderosa?</h3>
+            <p>Entre em contato pelo WhatsApp e peça seu catálogo completo com todos os modelos, tamanhos e preços. Atendimento personalizado!</p>
+            <a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer" class="btn btn-white">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <div class="info-box" style="margin-top:20px;">
+            <div class="info-box-item">
+              <h4>CNPJ</h4>
+              <p>60.706.951/0001-02</p>
+            </div>
+            <div class="info-box-item" style="border-top:1px solid var(--cinza-claro); padding-top:20px;">
+              <h4>Sobre a marca</h4>
+              <p>A Fit&amp;Sol é uma marca 100% digital, com curadoria cuidadosa de peças que equilibram preço, qualidade e design. Atendemos todo o Brasil com agilidade e carinho.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="logo.png" alt="Fit&amp;Sol" class="logo-img">
+          <p>Moda fitness e praia feminina que une estilo, conforto e autoestima. Do treino à praia, sempre com você.</p>
+          <p class="footer-cnpj">CNPJ: 60.706.951/0001-02</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Biquínis</a></li>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Maiôs</a></li>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Saída de praia</a></li>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Conjuntos academia</a></li>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Tops e blusas</a></li>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">Shorts e calças</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5591992423020" target="_blank" rel="noopener noreferrer">(91) 99242-3020</a></li>
+            <li><a href="mailto:biarabelo_1@hotmail.com">biarabelo_1@hotmail.com</a></li>
+            <li><a href="https://www.instagram.com/fit_e_sol" target="_blank" rel="noopener noreferrer">@fit_e_sol</a></li>
+            <li><a href="#contato">Belém – PA</a></li>
+            <li><a href="#contato">Seg a sáb, 08h–18h</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fit&amp;Sol. Todos os direitos reservados.</p>
+        <p>Feito com carinho em Belém–PA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Rodapé MonteSite - Atualização Automática -->
+  <div id="montesite-footer-badge"></div>
+  <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+
+  <script>
+    /* ── Scroll progress bar ── */
+    const progressBar = document.getElementById('scroll-progress');
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (docH > 0 ? (scrollTop / docH) * 100 : 0) + '%';
+    }
+
+    /* ── Header scroll ── */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+      updateProgress();
+    }, { passive: true });
+    updateProgress();
+
+    /* ── Mobile menu ── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav  = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    /* ── Historia accordion ── */
+    function toggleHistoria(trigger) {
+      const expanded = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', String(!expanded));
+      trigger.nextElementSibling.classList.toggle('open', !expanded);
+    }
+    mobileClose.addEventListener('click', closeMobileNav);
+
+    /* ── Hero entrance (stagger) ── */
+    const heroAnims = document.querySelectorAll('.hero-anim');
+    heroAnims.forEach((el, i) => {
+      setTimeout(() => el.classList.add('in'), 200 + i * 160);
+    });
+
+    /* ── Parallax suave na hero ── */
+    const heroSection = document.getElementById('hero');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < window.innerHeight) {
+        heroSection.style.backgroundPositionY = (window.scrollY * 0.35) + 'px';
+      }
+    }, { passive: true });
+
+    /* ── Intersection Observer genérico ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+
+        /* fade-in padrão (exceto cards geridos pelo stagger) */
+        if (el.classList.contains('fade-in')) {
+          if (!el.closest('.products-grid, .values-grid, .mvv-grid')) {
+            el.classList.add('visible');
+          }
+        }
+        /* slide-left / slide-right */
+        if (el.classList.contains('slide-left') || el.classList.contains('slide-right')) {
+          el.classList.add('visible');
+        }
+        /* divider-grow */
+        if (el.classList.contains('divider-grow')) {
+          el.classList.add('vis');
+        }
+
+        io.unobserve(el);
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in, .slide-left, .slide-right, .divider-grow')
+      .forEach(el => io.observe(el));
+
+    /* ── Stats bar: stagger ── */
+    const statsObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const statItems = entry.target.querySelectorAll('.stat-item');
+        statItems.forEach((item, i) => {
+          setTimeout(() => item.classList.add('vis'), i * 130);
+        });
+        statsObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.25 });
+
+    const statsGrid = document.querySelector('.stats-grid');
+    if (statsGrid) statsObs.observe(statsGrid);
+
+    /* ── Product/Value/Contact card stagger ── */
+    function staggerObserve(gridSelector, cardSelector, delay) {
+      const grid = document.querySelector(gridSelector);
+      if (!grid) return;
+      const gridObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const cards = entry.target.querySelectorAll(cardSelector);
+          cards.forEach((card, i) => {
+            card.style.transitionDelay = (i * delay) + 'ms';
+            card.classList.add('visible');
+          });
+          gridObs.unobserve(entry.target);
+        });
+      }, { threshold: 0.08 });
+      gridObs.observe(grid);
+    }
+
+    staggerObserve('.products-grid', '.product-card', 70);
+    staggerObserve('.values-grid',   '.value-card',   80);
+    staggerObserve('.mvv-grid',      '.mvv-card',     90);
+
+  </script>
+
+</body>
+</html>
